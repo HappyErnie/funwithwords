@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fun With Words</title>
   <link rel="stylesheet" type="text/css" href="funwithwords.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,45 +40,45 @@
         <!-- End smartphone / tablet look -->
         <!-- </div> -->
       </header><br>
-    </div>
 
-    <div id="board-container">
-      <div id="gameboard"></div>
-    </div><br>
+      <div id="board-container">
+        <div id="gameboard"></div>
+      </div><br>
+  
+      <div id="keyboard-container">
+        <div id="keyboard"></div>
+      </div>
 
-    <div id="keyboard-container">
-      <div id="keyboard"></div>
+      <div class="popup-howtoplay" id="popup-howtoplay">
+        <h2>How To Play</h2>
+        <p><b>Fun With Words</b> is a Wordle inspired web game created by HappyErnie. 
+        <br><br>Player will guess the correct 5-letter word within 6 tries.
+        </p>
+        <p><h3>Examples</h3></p><br>
+        <figure>
+          <img src="./Images/Green.png" style="width:100%">
+          <figcaption><b>A</b> is the correct letter.</figcaption>
+        </figure><br>
+        <figure>
+          <img src="./Images/Red.png" style="width:100%">
+          <figcaption>The correct letter is ONE letter away from <b>T</b>. Player can choose either S or U.</figcaption>
+        </figure><br>
+        <figure>
+          <img src="./Images/Yellow.png" style="width:100%">
+          <figcaption>The correct letter is TWO letters away from <b>G</b>. Player can choose either E or I.</figcaption>
+        </figure>
+        <button type="button" onclick="closePopUpHowToPlay()">Close</button>
+      </div>
+      <div class="popup-alphabet" id="popup-alphabet">
+      <h2>Alphabet</h2><br>
+      <h3><p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p></h3>
+      <button type="button" onclick="closePopUpAlphabet()">Close</button>
+      </div>
+      <div class="toastmessage">
+      <ul></ul>
+      </div>
+
     </div>
-   
-    <div class="popup-howtoplay" id="popup-howtoplay">
-      <h2>How To Play</h2>
-      <p><b>Fun With Words</b> is a Wordle inspired web game created by HappyErnie. 
-      <br><br>Player will guess the correct 5-letter word within 6 tries.
-      </p>
-      <p><h3>Examples</h3></p><br>
-      <figure>
-        <img src="./Images/Green.png" style="width:100%">
-        <figcaption><b>A</b> is the correct letter.</figcaption>
-      </figure><br>
-      <figure>
-        <img src="./Images/Red.png" style="width:100%">
-        <figcaption>The correct letter is ONE letter away from <b>T</b>. Player can choose either S or U.</figcaption>
-      </figure><br>
-      <figure>
-        <img src="./Images/Yellow.png" style="width:100%">
-        <figcaption>The correct letter is TWO letters away from <b>G</b>. Player can choose either E or I.</figcaption>
-      </figure>
-      <button type="button" onclick="closePopUpHowToPlay()">Close</button>
-    </div>
-    <div class="popup-alphabet" id="popup-alphabet">
-    <h2>Alphabet</h2><br>
-    <h3><p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p></h3>
-    <button type="button" onclick="closePopUpAlphabet()">Close</button>
-    </div>
-    <div class="toastmessage">
-    <ul></ul>
-    </div>
-    
   </div>
 
   <script type="text/javascript" src="funwithwords.js"></script>
