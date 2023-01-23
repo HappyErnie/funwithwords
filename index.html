@@ -13,68 +13,73 @@
 
 <body>
 
-  <header>
-    <!-- Simulate a smartphone / tablet -->
-    <div class="mobile-container">
-      <!-- Top Navigation Menu -->
-      <div class="topnav">
-        <h1 class="apptitle">Fun With Words</h1>
-        <div id="menuMain">
-          <a href="javascript:showAnswer()">Show Answer</a>
-          <a href="javascript:openPopUpHowToPlay()">How To Play?</a>
-          <a>Connect With Us</a>
-          <div id="menuHappyErnie">
-            <a href="https://www.youtube.com/@hellohappyernie" target="_blank">YouTube Channel</a>
-            <a href="https://www.instagram.com/hellohappyernie/" target="_blank">@hellohappyernie</a>
-            <a href="https://www.happyernie.com" target="_blank">Website</a>
-            <a href="mailto: hello.happyernie@gmail.com">Email</a>
-          </div>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <!-- End smartphone / tablet look -->
+  <div id="container">
+    <div id="game">
+      <header>
+        <h1 class="title">Fun With Words</h1>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- <div class="mobile-container"> -->
+          <!-- Top Navigation Menu -->
+          <!-- <div class="topnav"> -->
+            <!-- <h1 class="apptitle">Fun With Words</h1>
+            <div id="menuMain">
+              <a href="javascript:showAnswer()">Show Answer</a>
+              <a href="javascript:openPopUpHowToPlay()">How To Play?</a>
+              <a>Connect With Us</a>
+              <div id="menuHappyErnie">
+                <a href="https://www.youtube.com/@hellohappyernie" target="_blank">YouTube Channel</a>
+                <a href="https://www.instagram.com/hellohappyernie/" target="_blank">@hellohappyernie</a>
+                <a href="https://www.happyernie.com" target="_blank">Website</a>
+                <a href="mailto: hello.happyernie@gmail.com">Email</a>
+              </div> -->
+            <!-- </div> -->
+            <!-- <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            </div> -->
+        <!-- End smartphone / tablet look -->
+        <!-- </div> -->
+      </header><br>
     </div>
-  </header><br>
 
-  <main>
+    <div id="board-container">
+      <div id="gameboard"></div>
+    </div><br>
+
+    <div id="keyboard-container">
+      <div id="keyboard"></div>
+    </div>
+   
     <div class="popup-howtoplay" id="popup-howtoplay">
-        <h2>How To Play</h2>
-        <p><b>Fun With Words</b> is a Wordle inspired web game created by HappyErnie. 
-        <br><br>Player will guess the correct 5-letter word within 6 tries.
-        </p>
-        <p><h3>Examples</h3></p><br>
-        <figure>
-          <img src="./Images/Green.png" style="width:100%">
-          <figcaption><b>A</b> is the correct letter.</figcaption>
-        </figure><br>
-        <figure>
-          <img src="./Images/Red.png" style="width:100%">
-          <figcaption>The correct letter is ONE letter away from <b>T</b>. Player can choose either S or U.</figcaption>
-        </figure><br>
-        <figure>
-          <img src="./Images/Yellow.png" style="width:100%">
-          <figcaption>The correct letter is TWO letters away from <b>G</b>. Player can choose either E or I.</figcaption>
-        </figure>
-        <button type="button" onclick="closePopUpHowToPlay()">Close</button>
+      <h2>How To Play</h2>
+      <p><b>Fun With Words</b> is a Wordle inspired web game created by HappyErnie. 
+      <br><br>Player will guess the correct 5-letter word within 6 tries.
+      </p>
+      <p><h3>Examples</h3></p><br>
+      <figure>
+        <img src="./Images/Green.png" style="width:100%">
+        <figcaption><b>A</b> is the correct letter.</figcaption>
+      </figure><br>
+      <figure>
+        <img src="./Images/Red.png" style="width:100%">
+        <figcaption>The correct letter is ONE letter away from <b>T</b>. Player can choose either S or U.</figcaption>
+      </figure><br>
+      <figure>
+        <img src="./Images/Yellow.png" style="width:100%">
+        <figcaption>The correct letter is TWO letters away from <b>G</b>. Player can choose either E or I.</figcaption>
+      </figure>
+      <button type="button" onclick="closePopUpHowToPlay()">Close</button>
     </div>
     <div class="popup-alphabet" id="popup-alphabet">
-      <h2>Alphabet</h2><br>
-      <h3><p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p></h3>
-      <button type="button" onclick="closePopUpAlphabet()">Close</button>
-  </div>
-
-  <section id="gameboard"></section>
-  </main>
-
-  <div class="toastmessage">
+    <h2>Alphabet</h2><br>
+    <h3><p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p></h3>
+    <button type="button" onclick="closePopUpAlphabet()">Close</button>
+    </div>
+    <div class="toastmessage">
     <ul></ul>
+    </div>
+    
   </div>
-
-  <footer>
-    <section id="keyboard"></section>
-  </footer>
 
   <script type="text/javascript" src="funwithwords.js"></script>
 
