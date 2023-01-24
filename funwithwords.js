@@ -15530,8 +15530,8 @@ function showAnswer() {
 }
 
 function openPopUpHowToPlay() {
-    var x = document.getElementById("menuMain");
-    x.style.display = "none";
+    // var x = document.getElementById("menuMain");
+    // x.style.display = "none";
     let popup = document.getElementById("popup-howtoplay");
     popup.classList.add("open-popup-howtoplay");
 }

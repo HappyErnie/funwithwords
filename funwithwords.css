@@ -317,7 +317,7 @@ main {
   border-radius: 6px;
   border-style: solid;
   border-color: var(--color-gray-dark);
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
@@ -330,7 +330,7 @@ main {
 
 .open-popup-howtoplay {
   visibility: visible;
-  top: 50%;
+  top: 70%; /* 50% */
   transform: translate(-50%, -50%) scale(1);
 }
 
