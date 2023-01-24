@@ -15320,6 +15320,8 @@ const init = () => {
   gameBoard.addEventListener('animationend', event => event.target.setAttribute('data-animation', 'idle'));
   keyboard.addEventListener('click', onKeyboardButtonClick);
 
+  openPopUpHowToPlay();
+
 }
 
 const showMessage = (message) => {
