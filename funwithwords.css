@@ -10,76 +10,49 @@
 
 }
 
-/* NEW */
-* {
-  margin: 0;
-  padding: 0;
+/* BOOTSTRAP */
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
-html,
-body {
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
   height: 100%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#container {
-  display: flex;
-  background-color: var(--color-white);
-  height: 100%;
-  align-items: center;
-  flex-direction: column;
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
 }
 
-#game {
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
 }
+/* ------------------------ */
 
-header {
-  border-bottom: 1px solid rgb(58, 58, 60);
-}
 
-.title {
-  color: gainsboro;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 0.4rem 0 0.4rem 0;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/* html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
-#board-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  overflow: hidden;
-}
-
-#gameboard {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-#keyboard-container {
-  height: 200px;
-}
-/* ---------- */
-
-/* html { box-sizing: border-box; } */
-/* *, *:before, *:after { box-sizing: inherit; } */
-
-/* body { */
+body { */
   /* background: var(--color-white); BACKGROUND COLOR */
   /* color: var(--color-white); FONT COLOR */
-/* 
-  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
 
   min-height: 100vh;
   margin: 0;
@@ -220,7 +193,7 @@ main {
   width: 4rem;
 }
 
-[data-status='filled']      { border: 2px solid var(--color-blue); } /* BOX BORDER COLOR */
+[data-status='filled']      { border: 1px solid var(--color-blue); } /* BOX BORDER COLOR */
 [data-status='valid']       { background: var(--color-green); } /* CORRECT BOX COLOR */
 [data-status='oneaway']     { background: var(--color-red); } /* ONE AWAY BOX COLOR */
 [data-status='twoaway']     { background: var(--color-yellow); } /* TWO AWAY BOX COLOR */
@@ -278,66 +251,65 @@ main {
 /* ------------------- */
 
 /* TOP NAVIGATION MENU */
-.mobile-container {
-  display: flex;
-  background-color: var(--color-white);
-  height: 100%;
-  align-items: center;
-  flex-direction: column;
-}
+/* .mobile-container {
+  max-width: 480px;
+  margin: auto; */
+  /* background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px; */
+/* } */
 
-.topnav {
-  overflow: hidden;
-  background-color: var(--color-blue); /* TITLE BACKGROUND COLOR */
-  position: absolute; /* relative */
-  width: 480px;
-  height: 50px;
-}
+/* .topnav {
+  overflow: hidden; */
+  /* background-color: var(--color-blue); TITLE BACKGROUND COLOR */
+  /* position: absolute; relative */
+/* }
 
 .topnav #menuMain {
-  display: none;
-  background-color: var(--color-gray-dark);  /* MENU DROPDOWN BACKGROUND COLOR */
-}
+  display: none; */
+  /* background-color: var(--color-gray-dark); MENU DROPDOWN BACKGROUND COLOR */
+/* }
 
 .topnav #menuHappyErnie {
   text-indent: 30px;
 }
 
-.topnav a {
-  color: var(--color-white); /* MENU HYPERLINK TEXT COLOR */
-  padding: 14px 16px;
+.topnav a { */
+  /* color: var(--color-white); MENU HYPERLINK TEXT COLOR */
+  /* padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
-}
+} */
 
-.topnav a.icon {
-  background: var(--color-gray-dark); /* MENU ICON BACKGROUND COLOR */
-  display: block;
+/* .topnav a.icon { */
+  /* background: var(--color-gray-dark); MENU ICON BACKGROUND COLOR */
+  /* display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.topnav a:hover {
-  background-color: var(--color-gray-light); /* MENU MOUSE OVER BACKGROUND COLOR */
-  color: var(--color-white); /* MENU MOUSE OVER FONT COLOR */
-}
+.topnav a:hover { */
+  /* background-color: var(--color-gray-light); MENU MOUSE OVER BACKGROUND COLOR */
+  /* color: var(--color-white); MENU MOUSE OVER FONT COLOR */
+/* }
 
-.active {
-  background-color: var(--color-blue); /* MENU FONT COLOR */
-  color: var(--color-white); /* MENU FONT COLOR */
-  width: 480px;
+.active { */
+  /* background-color: var(--color-blue); MENU FONT COLOR */
+  /* color: var(--color-white); MENU FONT COLOR */
+  /* width: 480px;
   max-width: 480px;
 }
 
-.apptitle {
-  background-color: var(--color-blue); /* TITLE BACKGROUND COLOR */
-  color: var(--color-white); /* TITLE FONT COLOR */
-  font-size: 23px;
+.apptitle { */
+  /* background-color: var(--color-blue); TITLE BACKGROUND COLOR */
+  /* color: var(--color-white); TITLE FONT COLOR */
+  /* font-size: 23px;
   width: 480px;
   max-width: 480px;
-}
+} */
 /* ------------------- */
 
 /* POP UP FOR HOW TO PLAY */

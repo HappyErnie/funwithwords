@@ -15399,7 +15399,7 @@ const onKeyDown = (key) => {
   if (history.length >= MAX_NUMBER_OF_ATTEMPTS) return;
 
   // Find the current active row
-  const currentRow = document.querySelector(`#gameboard ul[data-row='${history.length}']`); 
+  const currentRow = document.querySelector(`#gameboard ul[data-row='${history.length}']`);
 
   // Find the next empty column in the current active row
   let targetColumn = currentRow.querySelector('[data-status="empty"]');
@@ -15542,8 +15542,8 @@ function closePopUpHowToPlay() {
 }
 
 function openPopUpAlphabet() {
-    // var x = document.getElementById("menuMain");
-    // x.style.display = "none";
+    var x = document.getElementById("menuMain");
+    x.style.display = "none";
     let popup = document.getElementById("popup-alphabet");
     popup.classList.add("open-popup-alphabet");
 }
