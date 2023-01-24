@@ -83,7 +83,7 @@ main {
 #gameboard, #keyboard {
   display: flex;
   flex-direction: column;
-  gap: 6px; /* Between each gameboard row */
+  gap: 5px; /* Between each gameboard row */
   text-transform: uppercase;
 }
 
@@ -91,7 +91,7 @@ main {
 #keyboard ul {
   display: flex;
   list-style: none;
-  gap: 6px; /* Between each gameboard & keyboard cell */
+  gap: 5px; /* Between each gameboard & keyboard column */
   padding: 0;
   margin: 0;
 }
@@ -119,7 +119,7 @@ main {
 /* KEYBOARD */
 #keyboard {
   gap: 8px; /* Between each keyboard row */
-  padding-bottom: 10px; 
+  padding: 0px 3px 10px; 
 }
 
 #keyboard ul { justify-content: center; }
