@@ -109,8 +109,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  height: 4rem; /*4*/
-  width: 4rem; /*4*/
+  height: 6rem; /*4*/
+  width: 6rem; /*4*/
 
   user-select: none;
 }
@@ -118,7 +118,7 @@ main {
 
 /* KEYBOARD */
 #keyboard {
-  gap: 8px; /* Between each row */
+  gap: 8px; /* Between each keyboard row */
   padding-bottom: 0px; /*10*/
 }
 
