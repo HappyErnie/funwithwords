@@ -15542,8 +15542,8 @@ function closePopUpHowToPlay() {
 }
 
 function openPopUpAlphabet() {
-    var x = document.getElementById("menuMain");
-    x.style.display = "none";
+    // var x = document.getElementById("menuMain");
+    // x.style.display = "none";
     let popup = document.getElementById("popup-alphabet");
     popup.classList.add("open-popup-alphabet");
 }
