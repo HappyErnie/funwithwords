@@ -119,7 +119,7 @@ main {
 /* KEYBOARD */
 #keyboard {
   gap: 8px; /* Between each keyboard row */
-  padding-bottom: 0px; /*10*/
+  padding-bottom: 10px; 
 }
 
 #keyboard ul { justify-content: center; }
