@@ -43,33 +43,6 @@ footer {
 }
 /* ------------------------ */
 
-
-/* html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
-
-body { */
-  /* background: var(--color-white); BACKGROUND COLOR */
-  /* color: var(--color-white); FONT COLOR */
-
-  /* font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-
-  min-height: 100vh;
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-} */
-
-/* header { border-bottom: 1px solid var(--color-white); } HORIZONTAL HEADER LINE COLOR */
-
-/* h1 {
-  margin: 10px 0;
-  padding: 0;
-  text-align: center;
-} */
-
 main {
   background: var(--color-white); /* BACKGROUND COLOR */
   color: var(--color-white); /* FONT COLOR */
@@ -109,8 +82,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  height: 6rem; /*4*/
-  width: 6rem; /*4*/
+  height: 6rem; 
+  width: 6rem; 
 
   user-select: none;
 }
@@ -139,7 +112,7 @@ main {
   transition: all .3s ease-in-out;
 }
 
-[data-key='Enter'] { width: 5rem; } /*6*/
+[data-key='Enter'] { width: 5rem; } 
 
 [data-key='Backspace'] {
   background-image: url("./Images/backspace.png");
@@ -147,7 +120,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   text-indent: -9999px;
-  width: 4rem; /*4*/
+  width: 4rem; 
 }
 
 [data-key='Alphabet'] {
@@ -249,68 +222,6 @@ main {
 }
 /* ------------------- */
 
-/* TOP NAVIGATION MENU */
-/* .mobile-container {
-  max-width: 480px;
-  margin: auto; */
-  /* background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px; */
-/* } */
-
-/* .topnav {
-  overflow: hidden; */
-  /* background-color: var(--color-blue); TITLE BACKGROUND COLOR */
-  /* position: absolute; relative */
-/* }
-
-.topnav #menuMain {
-  display: none; */
-  /* background-color: var(--color-gray-dark); MENU DROPDOWN BACKGROUND COLOR */
-/* }
-
-.topnav #menuHappyErnie {
-  text-indent: 30px;
-}
-
-.topnav a { */
-  /* color: var(--color-white); MENU HYPERLINK TEXT COLOR */
-  /* padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-} */
-
-/* .topnav a.icon { */
-  /* background: var(--color-gray-dark); MENU ICON BACKGROUND COLOR */
-  /* display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover { */
-  /* background-color: var(--color-gray-light); MENU MOUSE OVER BACKGROUND COLOR */
-  /* color: var(--color-white); MENU MOUSE OVER FONT COLOR */
-/* }
-
-.active { */
-  /* background-color: var(--color-blue); MENU FONT COLOR */
-  /* color: var(--color-white); MENU FONT COLOR */
-  /* width: 480px;
-  max-width: 480px;
-}
-
-.apptitle { */
-  /* background-color: var(--color-blue); TITLE BACKGROUND COLOR */
-  /* color: var(--color-white); TITLE FONT COLOR */
-  /* font-size: 23px;
-  width: 480px;
-  max-width: 480px;
-} */
-/* ------------------- */
-
 /* POP UP FOR HOW TO PLAY */
 .popup-howtoplay {
   width: 400px;
@@ -407,6 +318,57 @@ main {
 }
 
 .popup-alphabet button {
+  width: 50%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: var(--color-gray-dark); /* POP UP CLOSE BUTTON BACKGROUND COLOR */;
+  color: var(--color-white); /* POP UP CLOSE BUTTON FONT COLOR */;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+/* ------------------- */
+
+/* POP UP FOR GAME OVER DISPLAY */
+.popup-gameover {
+  width: 400px;
+  background: var(--color-white); /* POP UP BACKGROUND COLOR */
+  border-radius: 6px;
+  border-style: solid;
+  border-color: var(--color-gray-dark);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 10px 30px;
+  color: var(--color-gray-dark); /* POP UP FONT COLOR */
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup-gameover {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.8); /*scale 1*/
+}
+
+.popup-gameover h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup-gameover h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup-gameover button {
   width: 50%;
   margin-top: 50px;
   padding: 10px 0;

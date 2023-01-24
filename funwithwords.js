@@ -15357,7 +15357,6 @@ const checkGuess = (guess, word) => {
   });
 
   wordLetters.forEach((letter, index) => {
-    // alert (guessLetters[index] + '-' + letter);
     if (guessLetters[index] === letter) {
       currentRow.querySelector(`li:nth-child(${index + 1})`)
         .setAttribute('data-status', 'valid');
@@ -15380,8 +15379,8 @@ const checkGuess = (guess, word) => {
     showMessage('Congratulations! You have guessed the word correctly!');
     history.length = 6; // Set number of tries 6 to end the game.
   } else if (history.length >= 6) {
-    // showMessage('The correct word is ' + word + '.');
-    alert("The correct word is " + word + ".");
+    document.getElementById("ans").innerHTML = WORD_OF_THE_DAY; // Pass the correct answer to HTML for the pop up display.
+    openPopUpGameOver();
   }
   noOfCorrectLetters = 0;
 
@@ -15519,22 +15518,11 @@ function getRandomIndex (maxLength) {
   return Math.floor(Math.random() * Math.floor(maxLength));
 }
 
-// function showMenu() {
-//   var x = document.getElementById("menuMain");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
-
 function showAnswer() {
   alert (WORD_OF_THE_DAY);
 }
 
 function openPopUpHowToPlay() {
-    // var x = document.getElementById("menuMain");
-    // x.style.display = "none";
     let popup = document.getElementById("popup-howtoplay");
     popup.classList.add("open-popup-howtoplay");
 }
@@ -15545,8 +15533,6 @@ function closePopUpHowToPlay() {
 }
 
 function openPopUpAlphabet() {
-    // var x = document.getElementById("menuMain");
-    // x.style.display = "none";
     let popup = document.getElementById("popup-alphabet");
     popup.classList.add("open-popup-alphabet");
 }
@@ -15554,4 +15540,14 @@ function openPopUpAlphabet() {
 function closePopUpAlphabet() {
     let popup = document.getElementById("popup-alphabet");
     popup.classList.remove("open-popup-alphabet");
+}
+
+function openPopUpGameOver() {
+    let popup = document.getElementById("popup-gameover");
+    popup.classList.add("open-popup-gameover");
+}
+
+function closePopUpGameOver() {
+    let popup = document.getElementById("popup-gameover");
+    popup.classList.remove("open-popup-gameover");
 }
