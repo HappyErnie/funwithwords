@@ -15378,7 +15378,8 @@ const checkGuess = (guess, word) => {
     showMessage('Congratulations! You have guessed the word correctly!');
     history.length = 6; // Set number of tries 6 to end the game.
   } else if (history.length >= 6) {
-    showMessage('The correct word is ' + word + '.');
+    // showMessage('The correct word is ' + word + '.');
+    alert("The correct word is " + word + ".");
   }
   noOfCorrectLetters = 0;
 
@@ -15516,14 +15517,14 @@ function getRandomIndex (maxLength) {
   return Math.floor(Math.random() * Math.floor(maxLength));
 }
 
-function showMenu() {
-  var x = document.getElementById("menuMain");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+// function showMenu() {
+//   var x = document.getElementById("menuMain");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 
 function showAnswer() {
   alert (WORD_OF_THE_DAY);
