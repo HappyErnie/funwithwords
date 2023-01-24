@@ -23,14 +23,14 @@
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
-  background-color: #f1f1f1;
+  background-color: var(--color-gray-light);
   height: 100%;
 }
 
 /* Set black background color, white text and some padding */
 footer {
-  background-color: #555;
-  color: white;
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
   padding: 15px;
 }
 
@@ -82,7 +82,7 @@ main {
 #gameboard, #keyboard {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Between each row  6*/
+  gap: 6px; /* Between each gameboard row */
   text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@ main {
 #keyboard ul {
   display: flex;
   list-style: none;
-  gap: 10px; /* Between each cell  6*/
+  gap: 6px; /* Between each gameboard & keyboard cell */
   padding: 0;
   margin: 0;
 }
@@ -108,8 +108,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  height: 6rem; /*4*/
-  width: 6rem; /*4*/
+  height: 4rem; /*4*/
+  width: 4rem; /*4*/
 
   user-select: none;
 }
@@ -157,13 +157,13 @@ main {
   text-indent: -9999px;
   width: 4rem; /*4*/
 }
+/* ------------------- */
 
 [data-status='filled']      { border: 1px solid var(--color-blue); } /* BOX BORDER COLOR */
 [data-status='valid']       { background: var(--color-green); } /* CORRECT BOX COLOR */
 [data-status='oneaway']     { background: var(--color-red); } /* ONE AWAY BOX COLOR */
 [data-status='twoaway']     { background: var(--color-yellow); } /* TWO AWAY BOX COLOR */
 [data-status='none']        { background: var(--color-gray-dark); } /* INCORRECT BOX COLOR */
-/* ------------------- */
 
 /* TOAST MESSAGE */
 .toastmessage {
