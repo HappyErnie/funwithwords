@@ -331,7 +331,7 @@ main {
 
 .open-popup-howtoplay {
   visibility: visible;
-  top: 70%; /* 50% */
+  top: 50%; /* 50% */
   transform: translate(-50%, -50%) scale(1);
 }
 
