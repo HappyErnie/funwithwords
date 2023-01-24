@@ -371,7 +371,7 @@ main {
 
 /* POP UP FOR ALPHABET DISPLAY */
 .popup-alphabet {
-  width: 400px;
+  width: 390px;
   background: var(--color-white); /* POP UP BACKGROUND COLOR */
   border-radius: 6px;
   border-style: solid;
@@ -381,7 +381,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
   text-align: center;
-  padding: 0 10px 30px;
+  padding: 0 0px 30px;
   color: var(--color-gray-dark); /* POP UP FONT COLOR */
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
