@@ -45,7 +45,7 @@ footer {
 
 main {
   background: var(--color-white); /* BACKGROUND COLOR */
-  color: var(--color-white); /* FONT COLOR */
+  /* color: var(--color-black); FONT COLOR */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -74,8 +74,9 @@ main {
 [data-key] {
   border: 2px solid var(--color-blue); /* BOX BORDER COLOR */
   background: var(--color-blue); /* BOX BACKGROUND COLOR */
+  color: var(--color-white); /* BOX FONT COLOR */
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem; /*2*/
   line-height: 2rem; 
 
   display: inline-flex;
@@ -99,6 +100,7 @@ main {
 
 [data-key] {
   background: var(--color-blue); /* KEYBOARD BACKGROUND COLOR */
+  color: var(--color-white); /* KEYBOARD FONT COLOR */
   border: none;
   border-radius: 4px;
 
@@ -159,9 +161,9 @@ main {
 }
 
 .toast {
-  background: var(--color-gray-dark); /* TOAST MESSAGE BACKGROUND COLOR */
+  background: var(--color-white); /* TOAST MESSAGE BACKGROUND COLOR */
   border-radius: 4px;
-  color: var(--color-white); /* TOAST MESSAGE FONT COLOR */
+  color: var(--color-gray-dark); /* TOAST MESSAGE FONT COLOR */
   padding: 1rem;
   font-weight: bold;
   text-align: center;
