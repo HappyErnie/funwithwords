@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:resetGame()"><b style="color:#0F9D58; font-size: 25px;">Fun</b><b style="color:#DB4437; font-size: 25px;">With</b><b style="color:#F4B400; font-size: 25px;">Words</b></a>
+        <a class="navbar-brand" href="#"><b style="color:#0F9D58; font-size: 25px;">Fun</b><b style="color:#DB4437; font-size: 25px;">With</b><b style="color:#F4B400; font-size: 25px;">Words</b></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -81,7 +81,14 @@
         <div class="popup-gameover" id="popup-gameover">
           <h2>Answer</h2><br>
           <h3><p id="ans"></p></h3>
+          <button type="button" onclick="resetGame()">Play Again</button>
           <button type="button" onclick="closePopUpGameOver()">Close</button>
+        </div>
+        <div class="popup-win" id="popup-win">
+          <h2>Congratulations!</h2><br><br>
+          <h3>You have guessed the word correctly!</h3><br>
+          <button type="button" onclick="resetGame()">Play Again</button>
+          <button type="button" onclick="closePopUpWin()">Close</button>
         </div>
         <div class="toastmessage">
           <ul></ul>
