@@ -31,6 +31,7 @@
         <ul class="nav navbar-nav">
           <!-- <li class="active"><a href="#">Home</a></li> -->
           <li><a href="javascript:openPopUpHowToPlay()">How To Play</a></li>
+          <li><a href="javascript:resetGame()">Play Again</a></li>
           <li><a href="https://m.youtube.com/@hellohappyernie" target="_blank">@hellohappyernie</a></li>
           <li><a href="mailto: hello.happyernie@gmail.com">Contact</a></li>
         </ul>
@@ -55,27 +56,26 @@
         </main>
         <div class="popup-howtoplay" id="popup-howtoplay">
           <h2>How To Play</h2>
-          <p><b>Fun With Words</b> is a Wordle inspired web game created by HappyErnie. 
-          <br><br>Player will guess the correct 5-letter word within 6 tries.
-          </p>
-          <p><h3>Examples</h3></p><br><br><br>
+          <p><h3><b>Fun With Words</b> is a Wordle inspired web game created by HappyErnie. 
+          <br><br>Player will guess the correct 5-letter word within 6 tries.</h3></p>
+          <p><h2>Examples</h2></p><br><br>
           <figure>
-            <img src="./images/Green.png" style="width:100%">
-            <figcaption><b>A</b> is the correct letter.</figcaption>
+            <img src="./images/Green.png" style="width:70%">
+            <figcaption><b>A</b> is the correct letter in position 2.</figcaption>
           </figure><br><br><br>
           <figure>
-            <img src="./images/Red.png" style="width:100%">
-            <figcaption>The correct letter is ONE letter away from <b>T</b>. Player can choose either S or U.</figcaption>
+            <img src="./images/Red.png" style="width:70%">
+            <figcaption>The correct letter in position 2 is ONE letter away from <b>T</b>. Player can choose either S or U.</figcaption>
           </figure><br><br><br>
           <figure>
-            <img src="./images/Yellow.png" style="width:100%">
-            <figcaption>The correct letter is TWO letters away from <b>G</b>. Player can choose either E or I.</figcaption>
-          </figure>
+            <img src="./images/Yellow.png" style="width:70%">
+            <figcaption>The correct letter in position 1 is TWO letters away from <b>G</b>. Player can choose either E or I.</figcaption>
+          </figure> <br>
           <button type="button" onclick="closePopUpHowToPlay()">Close</button>
         </div>
         <div class="popup-alphabet" id="popup-alphabet">
           <h2>Alphabet</h2><br>
-          <h3><p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p></h3>
+          <h3><p>A B C D E F G<br><br>H I J K L M N<br><br>O P Q R S T<br><br>U V W X Y Z</p></h3>
           <button type="button" onclick="closePopUpAlphabet()">Close</button>
         </div>
         <div class="popup-gameover" id="popup-gameover">
